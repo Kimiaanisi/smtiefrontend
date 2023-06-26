@@ -1,0 +1,156 @@
+$primary-color: #F1592A;
+$secondary-color: #110C23;
+$third-color: #E8AA9B;
+$text-color: #999999;
+
+body {
+    background-color: #f1f1f1;
+    cursor: url('../img/cursor.png'), auto
+}
+
+p {
+    cursor: url('../img/cursor-text.png'), auto !important;
+}
+
+a {
+    cursor: url('../img/cursor-hand.png'), auto !important;
+}
+
+.cursor-nima {
+    cursor: url('../img/cursor-nima.png'), auto !important;
+}
+
+.sidebar {
+    background-color: $primary-color;
+    height: 100vh !important;
+    padding-top: 50px;
+}
+
+.sidebar-img {
+    width: 50%;
+}
+.sidebar-title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: $secondary-color;
+}
+.sidebar-subtitle {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: $primary-color;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px white;
+}
+.sidebar-menu {
+    list-style: none;
+    margin: 35px;
+    padding: 0px;
+    a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-family: 'Century Gothic';
+        font-size: 18px;
+        padding: 5px 10px;
+        border-radius: 25px;
+        border: 2px solid $primary-color;
+        &:hover {
+            border: 2px dashed white;
+        }
+    }
+}
+
+.sidebar-socials {
+    background-color: white;
+    margin: 35px;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgb(201, 201, 201);
+    a {
+        font-size: 30px;
+        color: $primary-color;
+        text-decoration: none;
+    }
+}
+
+.content-title {
+    font-family: 'Tempus Sans ITC';
+    color: $primary-color;
+}
+p {
+    color: $text-color;
+    font-family: 'Century Gothic';
+}
+
+.climax-section {
+    background-color: white;
+    border: 1px solid $secondary-color;
+    box-shadow: -7px 7px 0px $secondary-color;
+    margin: 60px;
+    padding: 40px 0px;
+    .col-md-1 {
+        padding: 0px;
+    }
+}
+
+.climax-section-button {
+    color: $secondary-color;
+    text-decoration: none;
+    padding: 15px 0px;
+    font-family: 'Century Gothic';
+    font-size: 18px;
+    transition: 0.3s;
+    i {
+        border: 1px solid $secondary-color;
+        padding: 15px 15px;
+        border-radius: 100%;
+        transition: 0.3s;
+    }
+    span {
+        margin-left: 5px;
+        transition: 0.3s;
+    }
+    &:hover {
+        i {
+            background-color: $secondary-color;
+            color: white;
+        }
+        span {
+            color: #110C23;
+        }
+    }
+    &:focus {
+        color: $primary-color;
+        i {
+            border: 1px solid $primary-color;
+            background-color: $primary-color;
+            color: white;
+        }
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+footer {
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(201, 201, 201);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 30px;
+    color: #A1A1A1;
+    font-family: 'Century Gothic';
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+        &:hover {
+            color: $secondary-color;
+            border-bottom: 1px solid $secondary-color;
+        }
+    }
+}
